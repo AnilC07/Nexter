@@ -1,4 +1,54 @@
-.footer{
+.footer {
    background-color: $color-secondary;
-    
+   grid-column: full-start / full-end;
+   padding: 8rem;
+
+}
+
+.nav {
+   list-style: none;
+
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   grid-gap: 2rem;
+   align-items: center;
+
+
+   &__link:link,
+   &__link:visited {
+      font-size: 1.4rem;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $font-display;
+      padding: 1.5rem;
+      display: block;
+      transition: all .2s;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+   }
+
+   &__link:hover,
+   &__link:active {
+      background-color: rgba(#fff, .05);
+      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+}
+
+
+}
+.copyright{
+   font-size: 1.4rem;
+   color: $color-grey-light-2;
+   margin-top: 6rem;
+   margin-right: auto;
+   margin-left: auto;
+   text-align: center;
+   width: 70%;
 }
